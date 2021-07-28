@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 from os import stat
 from sys import argv
 from pwd import getpwuid
@@ -10,8 +8,7 @@ from getopt import getopt, GetoptError
 def version():
 
     print("+---------------------------------------------------------------------------------+")
-    print("| statix. Copyright (C) 2021 Nathalon                                             |")
-    print("| Version: 1.0.0                                                                  |")
+    print("| Statix. Copyright (C) 2021 Nathalon, Contact: braindisassm@gmail.com            |")
     print("|                                                                                 |")
     print("| This program comes with ABSOLUTELY NO WARRANTY; for details type `show w`.      |")
     print("| This is free software, and you are welcome to redistribute it                   |")
