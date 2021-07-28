@@ -1,4 +1,4 @@
-statix
+Statix
 ======
 
 Installation (using pip3)
