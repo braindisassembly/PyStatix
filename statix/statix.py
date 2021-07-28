@@ -151,64 +151,106 @@ def main():
     user_command_interpreter = ""
 
     try:
-        opts, args = getopt(argv[1:], "hVf:spiDHrMmcaFtlougndI", ["help", "version", "filename=", "byte-size", "protection-bits", "inode-number", "device", "hard-links-number", "recent-access", "recent-modification", "metadata-change", "allocated-blocks", "filesystem-blocksize", "type-of-device", "login-name", "optional-encrypted-password", "user-id", "group-id", "name-field", "home-directory", "user-command-interpreter"])
+        opts, args = getopt(argv[1:], "hVf:spiDHrMmcaFtlougndI", ["help", "version", "filename=", "byte-size", "protection-bits", "inode-number", "device", "hard-links-number", "recent-access", "recent-modification",
+                                                                  "metadata-change", "allocated-blocks", "filesystem-blocksize", "type-of-device", "login-name", "optional-encrypted-password", "user-id", "group-id", "name-field", "home-directory", "user-command-interpreter"])
 
-    except GetoptError: usage()
+    except GetoptError:
+        usage()
 
     else:
         try:
             for opt, arg in opts:
                 if opt in ("-h", "--help"): usage(); exit(1)
                 if opt in ("-V", "--version"): version(); exit(1)
-                if opt in ("-f", "--filename"): filename = arg; filename_flag = True
-                if opt in ("-s", "--byte-size"): byte_size = True
-                if opt in ("-p", "--protection-bits"): protection_bits = True
-                if opt in ("-i", "--inode-number"): inode_number = True
-                if opt in ("-D", "--device"): device = True
-                if opt in ("-H", "--hard-links-number"): hard_links = True
-                if opt in ("-r", "--recent-access"): recent_access = True
-                if opt in ("-M", "--recent-modification"): recent_modification = True
-                if opt in ("-m", "--metadata-change"): metadata_change = True
-                if opt in ("-a", "--allocated-blocks"): allocated_blocks = True
-                if opt in ("-F", "--filesystem-blocksize"): filesystem_blocksize = True
-                if opt in ("-t", "--type-of-device"): type_of_device = True
-                if opt in ("-l", "--login-name"): login_name = True
-                if opt in ("-o", "--optional-encrypted-password"): optional_encrypted_password = True
-                if opt in ("-u", "--user-id"): user_id = True
-                if opt in ("-g", "--group-id"): group_id = True
-                if opt in ("-n", "--name-field"): name_field = True
-                if opt in ("-d", "--home-directory"): home_directory = True
-                if opt in ("-I", "--user-command-interpreter"): user_command_interpreter = True
+                if opt in ("-f", "--filename"):
+                    filename = arg
+                    filename_flag = True
+                if opt in ("-s", "--byte-size"):
+                    byte_size = True
+                if opt in ("-p", "--protection-bits"):
+                    protection_bits = True
+                if opt in ("-i", "--inode-number"):
+                    inode_number = True
+                if opt in ("-D", "--device"):
+                    device = True
+                if opt in ("-H", "--hard-links-number"):
+                    hard_links = True
+                if opt in ("-r", "--recent-access"):
+                    recent_access = True
+                if opt in ("-M", "--recent-modification"):
+                    recent_modification = True
+                if opt in ("-m", "--metadata-change"):
+                    metadata_change = True
+                if opt in ("-a", "--allocated-blocks"):
+                    allocated_blocks = True
+                if opt in ("-F", "--filesystem-blocksize"):
+                    filesystem_blocksize = True
+                if opt in ("-t", "--type-of-device"):
+                    type_of_device = True
+                if opt in ("-l", "--login-name"):
+                    login_name = True
+                if opt in ("-o", "--optional-encrypted-password"):
+                    optional_encrypted_password = True
+                if opt in ("-u", "--user-id"):
+                    user_id = True
+                if opt in ("-g", "--group-id"):
+                    group_id = True
+                if opt in ("-n", "--name-field"):
+                    name_field = True
+                if opt in ("-d", "--home-directory"):
+                    home_directory = True
+                if opt in ("-I", "--user-command-interpreter"):
+                    user_command_interpreter = True
 
-            if filename: statix()
+            if filename:
+                statix()
 
-            elif byte_size: statix(byte_size)
-            elif protection_bits: statix(protection_bits)
-            elif inode_number: statix(inode_number)
-            elif device: statix(device)
-            elif hard_links: statix(hard_links)
-            elif recent_access: statix(recent_access)
-            elif recent_modification: statix(recent_modification)
-            elif metadata_change: statix(metadata_change)
-            elif allocated_blocks: statix(allocated_blocks)
-            elif filesystem_blocksize: statix(filesystem_blocksize)
-            elif type_of_device: statix(type_of_device)
-            elif login_name: statix(login_name)
-            elif optional_encrypted_password: statix(iptional_encrypted_password)
-            elif user_id: statix(user_id)
-            elif group_id: statix(group_id)
-            elif name_field: statix(name_field)
-            elif home_directory: statix(home_directory)
-            elif user_command_interpreter: statix(user_command_interpreter)
+            elif byte_size:
+                statix(byte_size)
+            elif protection_bits:
+                statix(protection_bits)
+            elif inode_number:
+                statix(inode_number)
+            elif device:
+                statix(device)
+            elif hard_links:
+                statix(hard_links)
+            elif recent_access:
+                statix(recent_access)
+            elif recent_modification:
+                statix(recent_modification)
+            elif metadata_change:
+                statix(metadata_change)
+            elif allocated_blocks:
+                statix(allocated_blocks)
+            elif filesystem_blocksize:
+                statix(filesystem_blocksize)
+            elif type_of_device:
+                statix(type_of_device)
+            elif login_name:
+                statix(login_name)
+            elif optional_encrypted_password:
+                statix(iptional_encrypted_password)
+            elif user_id:
+                statix(user_id)
+            elif group_id:
+                statix(group_id)
+            elif name_field:
+                statix(name_field)
+            elif home_directory:
+                statix(home_directory)
+            elif user_command_interpreter:
+                statix(user_command_interpreter)
 
             else:
                 usage()
 
         except (UnboundLocalError):
             pass
-    
+
         except (TypeError):
             pass
+
 
 if __name__ == "__main__":
         main()
