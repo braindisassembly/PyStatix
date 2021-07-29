@@ -44,7 +44,7 @@ def usage():
     print("  -I: --user-command-interpreter       User command interpreter")
 
 
-def statix():
+def Statix():
 
     try:
         if filename:
@@ -203,44 +203,44 @@ def main():
                     user_command_interpreter = True
 
             if filename:
-                statix()
+                Statix()
 
             elif byte_size:
-                statix(byte_size)
+                Statix(byte_size)
             elif protection_bits:
-                statix(protection_bits)
+                Statix(protection_bits)
             elif inode_number:
-                statix(inode_number)
+                Statix(inode_number)
             elif device:
-                statix(device)
+                Statix(device)
             elif hard_links:
-                statix(hard_links)
+                Statix(hard_links)
             elif recent_access:
-                statix(recent_access)
+                Statix(recent_access)
             elif recent_modification:
-                statix(recent_modification)
+                Statix(recent_modification)
             elif metadata_change:
-                statix(metadata_change)
+                Statix(metadata_change)
             elif allocated_blocks:
-                statix(allocated_blocks)
+                Statix(allocated_blocks)
             elif filesystem_blocksize:
-                statix(filesystem_blocksize)
+                Statix(filesystem_blocksize)
             elif type_of_device:
-                statix(type_of_device)
+                Statix(type_of_device)
             elif login_name:
-                statix(login_name)
+                Statix(login_name)
             elif optional_encrypted_password:
-                statix(iptional_encrypted_password)
+                Statix(iptional_encrypted_password)
             elif user_id:
-                statix(user_id)
+                Statix(user_id)
             elif group_id:
-                statix(group_id)
+                Statix(group_id)
             elif name_field:
-                statix(name_field)
+                Statix(name_field)
             elif home_directory:
-                statix(home_directory)
+                Statix(home_directory)
             elif user_command_interpreter:
-                statix(user_command_interpreter)
+                Statix(user_command_interpreter)
 
             else:
                 usage()
