@@ -19,3 +19,5 @@ Installing from source is easy.
 2. Enter the source directory. `$ cd statix/`.
 3. if you have sudo installed, log in as a sudoer and execute the setup.py file with sudo. `$ sudo python3 setup.py install`.
 4. Done! It should now be a simple case of executing `$ statix` in your favorite terminal emulator.
+
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) [![PyPI pyversions](https://img.shields.io/pypi/pyversions/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
